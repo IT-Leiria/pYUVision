@@ -53,7 +53,7 @@ class YUV:
         r = self.yuv[:, :, 0] + 1.13983 * self.yuv[:, :, 2]
         g = self.yuv[:, :, 0] - 0.39465 * \
             self.yuv[:, :, 1] - 0.58060 * self.yuv[:, :, 2]
-        b = self.yuv[:, :, 0] - 2.03211 * self.yuv[:, :, 1]
+        b = self.yuv[:, :, 0] + 2.03211 * self.yuv[:, :, 1]
 
         # self.rgb = np.uint8(np.stack([r, g, b], axis=2))
         self.rgb = self.__normalise(np.stack([r, g, b], axis=2))
