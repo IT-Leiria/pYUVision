@@ -1,0 +1,6 @@
+WIDTH = 512
+HEIGHT = 512
+BITSPIXEL = 8
+CHROMA SUBSAMPLING = 4:2:0
+# The png to yuv conversion was performed through
+# ffmpeg -i lena.png -pix_fmt yuv420p lena.yuv

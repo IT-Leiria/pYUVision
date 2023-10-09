@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from pyuvision.pYUVision import YUV
 
 def test_to_rgb():
-    yuv = YUV('tests/lenna.yuv', (512, 512), 8)
+    yuv = YUV('tests/yuv/lena.yuv', (512, 512), 8)
     yuv.read()
     yuv.to_rgb()
     rgb = yuv.rgb
